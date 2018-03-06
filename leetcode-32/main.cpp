@@ -7,9 +7,17 @@
 //
 
 #include <iostream>
+//#include "Solution.hpp"
+#include "Solution.cpp"
+#include "DPSolution.cpp"
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    string s;
+    cout<<"please input s: ";
+    cin >> s;
+   // Solution sl;
+    DPSolution sl;
+    cout << sl.longestValidParentheses(s) << endl ;
     return 0;
 }
